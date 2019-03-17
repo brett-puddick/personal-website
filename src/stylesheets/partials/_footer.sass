@@ -1,12 +1,30 @@
 $footer-height: 4rem
 
 footer
-  align-items: center
   background-color: $color-dark
-  display: flex
-  flex-direction: row-reverse
+  color: $color-beta
   height: $footer-height
+  justify-content: space-around
   padding: 0
+  text-align: center
+  width: 100%
 
-  .copyrighting
-    padding: 0 $sizing-base
+  .footer-content
+    align-items: center
+    display: flex
+    height: inherit
+    justify-content: space-between
+    max-width: $max-content-width
+    margin: 0 auto
+
+    .social-links
+      display: flex
+      padding: 0 $sizing-base
+
+      .social-link
+        height: $sizing-medium
+        padding-right: $sizing-large
+
+    .copyrighting
+      display: inline-block
+      padding: 0 $sizing-base

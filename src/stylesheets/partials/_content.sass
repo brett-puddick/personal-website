@@ -1,12 +1,17 @@
-$max-content-width: 80rem
-
 .content
   align-items: center
   display: flex
   flex-direction: column
-  padding: 0 auto
+  position: sticky
 
   .content-section
-    background-color: $color-bright
+    background-color: $color-beta
+    color: $color-dark
     max-width: $max-content-width
     min-height: calc(100vh - #{$nav-height})
+    padding: 0 $sizing-base
+
+    &:before
+      height: $sizing-xx-large
+      content: ''
+      display: block

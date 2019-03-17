@@ -5,12 +5,16 @@ class NavBar extends React.Component {
   render () {
     return (
       <nav>
-        <img className='logo' src={logo}/>
-        <div className='nav-links'>
-          <h1>about</h1>
-          <h1>experience</h1>
-          <h1>projects</h1>
-          <h1>contact</h1>
+        <div className='nav-bar'>
+          <a href='./index.html' className='home-link'>
+            <img className='logo' src={logo}/>
+          </a>
+          <ul className='nav-links'>
+            <li><a href='#about' className='nav-link'>about</a></li>
+            <li><a href='#experience' className='nav-link'>experience</a></li>
+            <li><a href='#projects' className='nav-link'>projects</a></li>
+            <li><a href='#contact' className='nav-link'>contact</a></li>
+          </ul>
         </div>
       </nav>
     )

@@ -1,16 +1,36 @@
-$nav-height: 6rem
-$logo-width: 4rem
+$nav-height: $sizing-xx-large
+$logo-height: $sizing-x-large
 
 nav
   background-color: $color-alpha
   display: flex
   height: $nav-height
+  justify-content: space-around
+  position: fixed
+  width: 100%
+  z-index: 1
 
-  .logo
-    fill: $color-bright
-    width: $logo-width
-    padding: 0 $sizing-base
-
-  .nav-links
-    align-items: center
+  .nav-bar
     display: flex
+    justify-content: space-between
+    max-width: $max-content-width
+    width: 100%
+
+    .home-link
+      padding: calc((#{$nav-height} - #{$logo-height}) / 2) 0
+
+      .logo
+        height: $logo-height
+        padding: 0 $sizing-base
+
+    .nav-links
+      align-items: center
+      display: flex
+      padding: 0 $sizing-x-large
+
+      .nav-link
+        color: $color-beta
+        padding-left: $sizing-x-large
+
+
+
